@@ -1,25 +1,17 @@
-.list{
-    align-content: center;
-    width:50%;
-    height:50%;
-    border-color: black;
-    background-color:bisque;
-    justify-content: center;
-}
 .meal {
   display: flex;
   justify-content: space-between;
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
-  font-style: italic;
 }
 
-
+.meal h3 {
+  margin: 0 0 0.25rem 0;
+}
 
 .description {
   font-style: italic;
-  justify-content :space-between;
 }
 
 .price {

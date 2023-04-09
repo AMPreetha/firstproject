@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
-import classes from "./Cart.module.css";
+import { useContext } from "react";
+
 import Modal from "../UI/Modal";
-import CartContext from "./CartContext";
 import CartItem from "./CartItem";
+import classes from "./Cart.module.css";
+import CartContext from "../../store/cart-context";
 
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
@@ -32,6 +33,7 @@ const Cart = (props) => {
       ))}
     </ul>
   );
+
   return (
     <Modal onClose={props.onClose}>
       {cartItems}
@@ -48,4 +50,5 @@ const Cart = (props) => {
     </Modal>
   );
 };
+
 export default Cart;
